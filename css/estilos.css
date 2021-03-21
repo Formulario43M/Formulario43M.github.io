@@ -1,18 +1,33 @@
-html{ 
+html{
     font-family: sans-serif;
     text-align: center;
 }
-form{
+body{
     display: inline-block;
-    text-align: start;
+    text-align: left;
 }
-
-p>label>*{
-    display: block;
+label, legend{ 
+    font-weight: bold;
 }
-
-mi-footer {
-    display: block;
-    margin: 1rem 0;
+*:required, .obligatorio {
+    border: thin solid blue;
+}
+input [type=number], .numero{
+    text-align: right;
+}
+dfn{
+    font-weight: bold;
+}
+br + output, fieldset + output, footer, form em{
     font-size: small;
+} 
+fieldset p {
+    margin: 0;
 }
+fieldset label, label * {
+    font-weight: normal;
+}
+.error {
+    color: red;
+}
+
